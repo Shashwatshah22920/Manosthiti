@@ -38,7 +38,7 @@ body {
     align-items: center;
     justify-content: center;
     width: 62%;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 250px;
     height: 500px;
 }
@@ -67,6 +67,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    border: 4px solid transparent;
 }
 
 .feedback-container button:hover {
