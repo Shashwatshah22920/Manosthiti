@@ -1,155 +1,314 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manosthiti</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-</head>
-  <body>
-    <header>
-       <nav>
-          <div class="navleft">
-            <a href="index.html"><i class="fas fa-home"></i></a>
-            <a href="#">Chat_bot</a>
-            <a href="#">Services</a>
-            <a href="#">Blogs</a>
-            <a href="#">Resources</a>
-            <a href="feedback.html">Feedback</a>
-            <a href="about.html">About</a>
-          
-             <div class="navright">
-              <button id="b1" >Login</button>
-              <button id="b2">Sign-up</button>
-             </div>
-          </div>
-          
-       </nav>
-    </header>
-    <section class="firstsection">
-      <div class="leftsection">Hi, there
-        <br>
-        Welcome to MaNoStHiTi,
-        <br>your
-        <span id="element"></span>
-        <i class="fas fa-robot"></i></i>
-  </div>
-  <div class="rightsection">
-    <img src="mstphoto-removebg-preview.png">
-  </div>
-    </section>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-    var typed = new Typed('#element', {
-      strings: ['Health bot','chat_bot','E-friend'],
-      typeSpeed: 40,
-      loop: true
-    }); 
-  </script>
-    <div class="reflex">
-      <h1>Services</h1>
-      <div class="innerreflex">
-          <div class="r1">
-              <i class="fas fa-thumbs-up"></i>
-              <br><br>
-              <h2>Anxiety Management</h2>
-              <br>
-              <p>Effective strategies to manage anxiety and improve well-being</p>
-          </div>
-          <div class="r2">
-              <i class="fas fa-spa"></i>
-              <br><br>
-              <h2>Stress Releif</h2>
-              <br>
-              <p>Techniques to reduce stress and promote relaxation for a balanced lifestyle</p>
-          </div>
-          <div class="r3">
-              <i class="far fa-smile"></i>    
-              <br><br>
-              <h2>Emotional Support</h2>
-              <br>
-              <p>A compassionate space to share your feelings and receive guidance</p>
-          </div>
-      </div>
-  </div>
-
-
-<div class="services-sec">
-  <div class="service-container">
-    <img src="cerealbowl.png" alt="Service 1">
-    <div class="service-text">
-      <h2>Personalized therapy</h2>
-      <p>Tailored therapy sessions designed to meet the unique needs of each indvidual ,providing personalized support and guidance </p>
-    </div>
-  </div>
-  <div class="service-container">
-    <img src="chatbotasse-removebg-preview.jpg" alt="Service 2">
-    <div class="service-text">
-      <h2>24/7 Chatbot accessibility</h2>
-      <p>Access to the chatbot anytime,providing immediate support and assistance whenever it is needed ensuring constant accessibility</p>
-    </div>
-  </div>
-  <div class="service-container">
-    <img src="pic3se.jpg" alt="Service 3">
-    <div class="service-text">
-      <h2>Mental health resources</h2>
-      <p>Explore a variety of mental health resources and tools to help you manage your well-being</p>
-    </div>
-  </div>
-</div>
-
-<div class="git">
-  <div class="taq">
-     <h1>Get in touch</h1>
-     <br>
-     <h3>"Its you too,but not only you"</h3>
-  </div>
-  <div class="form-container">
-     <div class="b12">
-         <div class="b1">
-             <label for="name">Name:</label>
-             <br>
-             <input type="text" id="name" class="form-input" placeholder="Enter your name">
-            </div>
-             
-             <div class="b2">
-                 <label for="email">Email:</label>
-                 <br>
-             <input type="email" id="email" class="form-input" placeholder="Enter your email">
-             </div>
-      
-     </div>
-     
-      <div class="message">
-         <label for="message">Message</label>
-         <br>
-         <textarea placeholder="Hey, Whatsup!" rows="6" style="width: 500px;"></textarea>
-         <br>
-         <button type="submit" class="submes">submit</button>
-     </div>
- </div>
-</div>
-
-
-<br><br><br><br><br><br>
-<footer>
-  <div class="foot">
-    <div class="pages">
-        <a href="#" class="a1">Conditions of Use</a>
-        <a href="#" class="a2">All rights reserved</a>
-        <a href="#" class="a3">Price note</a>
-    </div>
+* {
+    margin: 0;
+  }
+  
+  body {
+    color: white;
+    background-color: #20808c;
+    font-family: 'Teko', sans-serif;
+    width: 100%;
     
-    <div class="copyright">© 2024-2025, Manosthiti.com, Inc. or its affiliates</div>
-</div>
-</footer>
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav {
+   width: 100%;
+    height: 60px;
+    background-color: #062136;
+  }
+   
+  .navleft
+  {
+     font-size: 30px;
+     
+    display: flex;
+    align-items: center;
+  }
+  .navleft a{
+    margin-left: 40px;
+      text-align: center;
+    display: inline-block;
+    margin-top: 10px;
+  }
+.navleft a:hover
+{
+  text-decoration: underline;
+}
+.navright {
+  margin-left: 450px;
+  border: white;
+  
+}
 
-  </body>
-</html>
+.navright button 
+{
+  border-radius: 10px;
+  height: 35px;
+  width: 70px;
+  color: white;
+  background-color: #fac014;
+  border-color: black;
+  color: black;
+}
+.navright button:hover
+{
+  background-color: #20808C;
+  scale: 1.1;
+  border-color: white;
+  color: white;
+}
+  .left {
+    font-size: 1.5rem;
+  }
+  
+  .firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 30px;
+    padding-bottom: 150px;
+  }
+  
+  .leftsection {
+    font-weight: 900;
+    font-size: 50px;
+  }
+  
+  .rightsection img {
+    height: 350px;
+    width: 450px;
+    max-width: 100%;
+    padding-top: 20px;
+  }
+  
+  .purple {
+    color: #afeded;
+  }
+  
+  #element {
+    color: #FFC100;
+  }
+/*---------------------------SERVICES---------------------------------------------*/
+
+.reflex h1{
+
+  font-size: 50px;
+  padding: 50px 0 40px 0;
+}
+
+.reflex
+{
+  background-color: #062136;
+  height: 500px;
+  padding-left: 40px;
+  color: white;
+  
+}
+
+.innerreflex
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.r1, .r2, .r3{
+  width: 30%;
+      height: 60%;
+  font-size: 20px;
+  
+}
+
+.r1 i
+{
+  font-size: 40px;
+  padding: 0 0 10px 5px;
+}
+
+.r2 i
+{
+  font-size: 40px;
+  padding: 0 0 10px 5px;
+}
+
+.r3 i
+{
+  font-size: 40px;
+  padding: 0 0 10px 5px;
+}
+
+
+.services-sec {
+  display: flex;
+  justify-content: space-between; 
+  padding: 50px 20px 100px; 
+  height: 400px;
+  
+  background: hsla(326, 53%, 62%, 1);
+
+  background: linear-gradient(315deg, hsla(326, 53%, 62%, 1) 0%, hsla(219, 67%, 72%, 1) 49%, hsla(176, 95%, 68%, 1) 94%);
+  
+  background: -moz-linear-gradient(315deg, hsla(326, 53%, 62%, 1) 0%, hsla(219, 67%, 72%, 1) 49%, hsla(176, 95%, 68%, 1) 94%);
+  
+  background: -webkit-linear-gradient(315deg, hsla(326, 53%, 62%, 1) 0%, hsla(219, 67%, 72%, 1) 49%, hsla(176, 95%, 68%, 1) 94%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D16BA5", endColorstr="#86A8E7", GradientType=1 );
+
+}
+.service-container img{
+  width: 300px;
+  display: block;
+  margin: auto;
+  margin-bottom: 0;
+}
+.service-container {
+  position: relative; 
+  width: calc(33.333% - 20px);
+  margin-right: 1px;
+  padding-top: 20px;
+}
+
+.service-container:last-child {
+  margin-right: 0; 
+}
+
+
+.service-text 
+{
+   width: 280px;
+   height: 120px;
+   position: absolute;
+   bottom: 0;
+   left: 58px;
+   right: 0;
+   top: 267px;
+   background: rgba(0,0,0,0.7);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 10px;
+   text-align: center;
+}
+
+
+.service-text p {
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
+}
+
+/*----------------------------FOOT 1--------------------------------*/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  font-size: 20px;
+}
+
+.b12
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.b12 input{
+  margin-right: 20px;
+}
+.form-input {
+  padding: 10px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 220px;
+}
+
+.message textarea
+{
+  
+  
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submes
+{
+  align-self: flex-end; /* Align to the right */
+            background-color: #20808c;
+            color: white;
+            border: none;
+            height: 30px;
+            width: 70px;
+            margin-left: 434px;
+            border-radius: 5px;
+            cursor: pointer;
+}
+
+.git
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  
+  padding-left: 50px;
+  background-color: #062136;
+  height: 350px;
+}
+
+.taq
+{
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 50%;
+}
+
+
+
+
+/*------------------------- FOOT 2 --------------------------------*/
+  .foot
+  {
+    background-color: #062136;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 22px;
+   flex-direction: column;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+  padding-top: -200px;
+  }
+.copyright
+{
+  font-size: 20px;
+  
+  padding-bottom: 10px;
+ display: flex;
+  text-align: center;
+  justify-content: left;
+  align-items: start;
+}
+  .pages
+  {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .pages a{
+    color: white;
+    margin-right: 20px;
+    padding-left:  13px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+  }
